@@ -18,6 +18,12 @@
 /* Background gradient - body: */
 --Very-dark-gray-blue: hsl(237, 17%, 21%);
 --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+--menu-width: 25rem;
+--menu-border-radius: 0.5rem;
+--top-header-distance: 3.45rem;
+--top-header-height: 2rem;
+--footer-height: 55rem;
 }
 
 
@@ -79,12 +85,51 @@ h2{
     font-size: 1.8rem;
 }
 
+/*dropdown menu*/
+
+.dropdown-menu{
+    background-color: yellow;
+    position: absolute;
+    top: calc(2*var(--top-header-distance) + var(--top-header-height));
+    left:5vw;
+    right:5vw;
+    padding: 1.5rem;
+    border-radius: var(--menu-border-radius);
+}
+
+nav ul{
+    display: block;
+}
+
+nav li{
+    padding: 1rem;
+}
+
+nav ul li ul{
+    display: block;
+    background-color:var(--Grayish-blue) ;
+    border-radius: var(--menu-border-radius);
+    margin-top: 1rem;
+
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 1rem 0;
+}
+
+nav *{
+    display:none;
+}
+
+
 
 
 /* header */
 
 header{
-    padding: 3.45rem 1.8rem;
+    padding: var(--top-header-distance) 1.8rem;
     display: flex;
     flex-flow: column nowrap ;
     background-color: green;
@@ -111,6 +156,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .btn a{
@@ -119,9 +165,11 @@ header{
     font-size: 1rem;
 }
 
-p{
+
+/* this p was important */
+/* p{
     line-height: 1.2rem;
-}
+} */
 
 .btn:nth-child(1){
     background-color: white;
@@ -136,7 +184,7 @@ p{
 }
 
 .top-header{
-    height: 2rem;
+    height: var(--top-header-height);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -203,7 +251,7 @@ footer{
 margin-top:8rem;
     background-color: var(--Very-dark-black-blue);
     border-radius: 0 6.1rem 0 0;
-    height: 50rem;
+    height: var(--footer-height);
 }
 
 footer img{
