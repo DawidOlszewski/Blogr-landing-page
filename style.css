@@ -20,6 +20,140 @@
 --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
+
+/* general settings */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 body{
     font-size: 16px;
+    font-family:'ubuntu', 'sans serif';
+    /* background-color: red; */
+    text-align: center;
+}
+
+nav ul{
+    display: none;
+    list-style: none;
+}
+
+.big-img{
+    width:100%;
+}
+
+p{
+    /* font-family: "Overpass", 'sans-serif'; */
+    font-size: 1.1rem;
+    padding:  0 0.7rem;
+}
+
+h1{
+    font-size: 2.05rem;
+    letter-spacing: normal;
+    line-height: 2.75rem;
+    font-weight: 600;
+    padding: 6.8rem 0 0 0;
+    font-family: "Overpass", 'sans-serif';
+}
+
+h2{
+    padding: 4rem 1.5rem  1rem 1.5rem;
+    color: var(--Very-dark-blue);
+    /* padding-bottom: 3rem; */
+    font-family: "Overpass", 'sans-serif';
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+
+
+/* header */
+
+header{
+    padding: 3.45rem 1.8rem;
+    display: flex;
+    flex-flow: column nowrap ;
+    background-color: green;
+    width: 100vw;
+    height: 36rem;
+    border-radius: 0 0 0 6.1rem;
+    /* background-image: url(images/bg-pattern-intro.svg);
+    background-repeat: no-repeat;
+    background-position: -35rem 1;
+    background-size: 30%; */
+    background: linear-gradient(180deg, var(--Very-light-red) 0%, var(--Light-red));
+    color:white;
+}
+
+.hamburger{
+    height: 1.1rem;
+}
+
+.btn{
+    border-radius: 5rem;
+    height: 2.9rem;
+    width: 8.5rem;
+    border: 0.1rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:nth-child(1){
+    background-color: white;
+}
+
+.btn:nth-child(1) a{
+    color: var(--Light-red);
+}
+
+.btn:nth-child(2){
+    background-color: transparent;
+}
+
+.top-header{
+    height: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    height: 100%;
+}
+
+.header-btn-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text{
+    padding: 0 0.9rem;
+}
+
+.header-text  > p{
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+}
+
+
+.first-h2 {
+    padding-top:6.6rem;
+}
+
+/* footer */
+footer{
+    background-color: var(--Very-dark-black-blue);
 }
