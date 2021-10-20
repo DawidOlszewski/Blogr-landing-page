@@ -56,7 +56,9 @@ a{
 p{
     /* font-family: "Overpass", 'sans-serif'; */
     font-size: 1.1rem;
-    padding:  0 0.7rem;
+    padding:  0 1.4rem;
+    line-height: 2rem;
+
 }
 
 h1{
@@ -117,6 +119,10 @@ header{
     font-size: 1rem;
 }
 
+p{
+    line-height: 1.2rem;
+}
+
 .btn:nth-child(1){
     background-color: white;
 }
@@ -160,16 +166,48 @@ header{
     padding-top:6.6rem;
 }
 
+
+/* special section */
+
+.special-section{
+    padding-top:10rem;
+    background: url(images/bg-pattern-circles.svg) no-repeat center top -30rem,
+                        linear-gradient(180deg,   var(--Very-dark-gray-blue) 0%,
+                        var(--Very-dark-desaturated-blue) 100%);
+    height: max-content;
+    border-radius: 0 6.1rem 0 6.1rem;
+    margin-bottom: 4rem;
+}
+
+.special-image {
+    position: relative;
+    top: 15rem;
+    margin-top: -10rem;
+}
+
+.special-section h2{
+    color:white;
+}
+.special-section p{
+    padding: 0 2rem 13rem 2rem;
+    font-family: "Overpass", 'sans-serif';
+    color:white;
+    
+}
+
+
+
+
 /* footer */
 footer{
-margin-top:10rem;
+margin-top:8rem;
     background-color: var(--Very-dark-black-blue);
     border-radius: 0 6.1rem 0 0;
     height: 50rem;
 }
 
 footer img{
-    margin: 3rem;
+    margin: 4rem;
 }
 
 footer a{
