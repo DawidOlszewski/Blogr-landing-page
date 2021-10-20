@@ -38,7 +38,15 @@ body{
 
 nav ul{
     display: none;
+}
+
+ul{
     list-style: none;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 .big-img{
@@ -106,7 +114,6 @@ header{
 .btn a{
     color:white;
     font-weight: 700;
-    text-decoration: none;
     font-size: 1rem;
 }
 
@@ -155,5 +162,28 @@ header{
 
 /* footer */
 footer{
+margin-top:10rem;
     background-color: var(--Very-dark-black-blue);
+    border-radius: 0 6.1rem 0 0;
+    height: 50rem;
 }
+
+footer img{
+    margin: 3rem;
+}
+
+footer a{
+    color: white;
+}
+
+footer > ul > li > ul{
+    margin: 2.5rem;
+}
+footer > ul > li > a{
+    font-weight: 500;
+}
+
+footer > ul > li > ul li:not(:last-child){
+    margin-bottom : 1rem;
+}
+
