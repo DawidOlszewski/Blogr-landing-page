@@ -110,10 +110,12 @@ nav{
     right:var(--menu-padding);
     /* padding: 1.5rem; */
     border-radius: var(--menu-border-radius);
+    box-shadow: 0 0.5rem 2.2rem -1rem var(--Very-dark-grayish-blue);
 }
 
 .menu a{
     color: var(--Very-dark-blue);
+    font-weight: 600;
 }
 
 .menu-list{
@@ -130,7 +132,7 @@ nav{
     width: 100%;
 }
 
-.category > a{
+.menu-item > a{
     font-size: 1.1rem;
 }
 
@@ -139,7 +141,6 @@ nav{
     align-items: center;
     justify-content: center; 
     height: 3rem; 
-    
 }
 
 /* .menu-item > a */
@@ -187,7 +188,7 @@ hr {
 }
 
 .sign-up{
-    background: linear-gradient(90deg, var(--Light-red) 0%, var(--Very-light-red) 100%);
+    background: linear-gradient(-90deg, var(--Light-red) 0%, var(--Very-light-red) 100%);
 }
 
 /* nav *{
