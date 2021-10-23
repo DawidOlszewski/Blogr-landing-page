@@ -6,6 +6,7 @@
 
 /* Neutral */
 --White: hsl(0, 0%, 100%);
+--Light-Gray:rgb(235, 232, 232);
 --Grayish-blue: hsl(240, 2%, 79%);
 --Very-dark-grayish-blue: hsl(207, 13%, 34%);
 --Very-dark-black-blue: hsl(240, 10%, 16%);
@@ -25,6 +26,7 @@
 --top-header-height: 2rem;
 --footer-height: 55rem;
 --submenu-margin: 1.5rem;
+--menu-padding:1.7rem;
 }
 
 
@@ -54,6 +56,14 @@ ul{
 
 a{
     text-decoration: none;
+    color:black;
+    font-family: 'Overpass', 'sans serif';
+    
+}
+
+button{
+    background-color: transparent;
+    border: none;
 }
 
 .big-img{
@@ -93,13 +103,17 @@ nav{
 }
 
 .menu{
-    background-color: yellow;
+    background-color: white;
     position: absolute;
-    top: calc(2*var(--top-header-distance) + var(--top-header-height));
-    left:5vw;
-    right:5vw;
+    top: calc(var(--top-header-distance) + var(--top-header-height) + 2.3rem);
+    left:var(--menu-padding);
+    right:var(--menu-padding);
     /* padding: 1.5rem; */
     border-radius: var(--menu-border-radius);
+}
+
+.menu a{
+    color: var(--Very-dark-blue);
 }
 
 .menu-list{
@@ -109,9 +123,15 @@ nav{
     align-items: center;
 }
 
+
+
 .menu-item{
     height: 100%;
     width: 100%;
+}
+
+.category > a{
+    font-size: 1.1rem;
 }
 
 .menu-item a{
@@ -119,6 +139,22 @@ nav{
     align-items: center;
     justify-content: center; 
     height: 3rem; 
+    
+}
+
+/* .menu-item > a */
+
+
+.menu-item img{
+    margin-left: 0.4rem;
+}
+
+.menu-item:first-child{
+    margin-top: 1rem;
+}
+
+.menu-list:last-child{
+    margin: 1rem 0;
 }
 
 
@@ -127,9 +163,9 @@ nav{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color:var(--Grayish-blue) ;
+    background-color:var(--Light-Gray) ;
     border-radius: var(--menu-border-radius);
-    margin: 0 var(--submenu-margin);
+    margin: 0.5rem var(--submenu-margin);
 }
 
 .submenu li{
@@ -145,12 +181,14 @@ nav{
 
 hr {
     border: none;
-    border-top: 1px solid #333;
-    margin: 0.5rem 0;
+    border-top: 1px solid var(--Light-Gray);
+    margin: 1.5rem 0;
     width: calc(100% - 2*var(--submenu-margin)) ;
-
 }
 
+.sign-up{
+    background: linear-gradient(90deg, var(--Light-red) 0%, var(--Very-light-red) 100%);
+}
 
 /* nav *{
     display:none;
@@ -170,7 +208,6 @@ header{
     padding: var(--top-header-distance) 1.8rem;
     display: flex;
     flex-flow: column nowrap ;
-    background-color: green;
     width: 100vw;
     height: 36rem;
     border-radius: 0 0 0 6.1rem;
