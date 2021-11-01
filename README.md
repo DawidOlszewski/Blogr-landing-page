@@ -7,6 +7,8 @@ I can serve tasty spaghetti.
 I was totally lose in this project, but it's an important lesson for the future.
 The mobile version is pretty cool, but something went wrong in desktop version.
 
+preview site: https://dawidolszewski.github.io/Blogr-landing-page/
+
 I used here:
 * media queries
 * relative and absolute positioning
