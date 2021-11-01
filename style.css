@@ -357,12 +357,14 @@ footer > ul > li > ul li:not(:last-child){
     margin-bottom : 1rem;
 }
 
-/* @media (min-width: 500px) and (max-width: 799px){
-    .header-btn-area{
-        /* flex-direction: column; 
+/* hovering */
 
-    }
-} */
+footer > ul > li> ul > li:hover, footer > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+
+
 @media(min-width:600px) and (max-width:799px){
     .special-image{
         top:20rem;
@@ -585,6 +587,8 @@ footer > ul > li > ul li:not(:last-child){
     footer > ul > li > ul {
         margin-bottom: 0;
     }
+
+    
 
 }
 
